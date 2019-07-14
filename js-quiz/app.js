@@ -20,12 +20,13 @@ form.addEventListener('submit', e => {
 		}
 	});	
 
-	scrollTo(0,0) //scrollTo(x-cordinate, y-cordinate)
+	scrollTo(0,0) 
 
     showScore.classList.remove('d-none');
 	
 	let scoreCount = 0;
 
+	/**Allows the score starts counting from 0*/
 	const timer = setInterval(() => {
 
 		showScore.querySelector('span').textContent = `${scoreCount}%`;
